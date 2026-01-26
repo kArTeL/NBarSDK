@@ -21,8 +21,8 @@
 //  http://sourceforge.net/projects/zbar
 //------------------------------------------------------------------------
 
-#import <ATBarSDK/ZBarCameraSimulator.h>
-#import <ATBarSDK/ZBarReaderView.h>
+#import <NBarSDK/ZBarCameraSimulator.h>
+#import <NBarSDK/ZBarReaderView.h>
 
 // hack around missing simulator support for AVCapture interfaces
 
