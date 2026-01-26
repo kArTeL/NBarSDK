@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '13.0'
 
   # Expose only the public iOS SDK headers (+ zbar.h which they import)
-  s.public_header_files = ['iphone/**/**/*.h', 'include/*.h']
+  s.public_header_files = ['iphone/*.h', 'iphone/**/*.h', 'iphone/**/**/*.h', 'include/*.h']
 
   # Precisely include sources to avoid overlapping/duplicate matches
   s.source_files = [
@@ -26,8 +26,8 @@ Pod::Spec.new do |s|
     "zbar/qrcode/*.c",
     "iphone/*.m"
   ]
-  # Private headers needed during build (eg, config.h)
-  s.private_header_files = ['iphone/include/config.h']
+  # # Private headers needed during build (eg, config.h)
+  # s.private_header_files = ['iphone/include/config.h']
   
   # Bundle SDK resources (HTML and images)
   s.resource_bundles = {
