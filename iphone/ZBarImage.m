@@ -22,7 +22,7 @@
 //------------------------------------------------------------------------
 
 #import <UIKit/UIKit.h>
-#import <ATBarSDK/ZBarImage.h>
+#import <NBarSDK/ZBarImage.h>
 #import "debug.h"
 
 static void image_cleanup(zbar_image_t *zimg)

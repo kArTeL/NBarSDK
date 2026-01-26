@@ -21,8 +21,8 @@
 //  http://sourceforge.net/projects/zbar
 //------------------------------------------------------------------------
 
-#import <ATBarSDK/ZBarReaderController.h>
-#import <ATBarSDK/ZBarHelpController.h>
+#import <NBarSDK/ZBarReaderController.h>
+#import <NBarSDK/ZBarHelpController.h>
 #import "debug.h"
 
 /* the use of UIGetScreenImage() may no longer be sanctioned, even
