@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.source_files = ['include/**/*', 'zbar/**/*', 'iphone/**/*']
   
   # s.resource_bundles = {
-  #   'ATBarSDK' => ['ATBarSDK/Assets/*.png']
+  #   'NBarSDK' => ['NBarSDK/Assets/*.png']
   # }
 
   s.frameworks = ['AVFoundation', 'CoreGraphics', 'CoreMedia', 'CoreVideo', 'QuartzCore']
