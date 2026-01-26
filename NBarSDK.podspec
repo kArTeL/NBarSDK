@@ -13,15 +13,18 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '13.0'
 
   # Expose only the public iOS SDK headers (+ zbar.h which they import)
-  s.public_header_files = ['iphone/include/ATBarSDK/*.h', 'include/zbar.h']
+  s.public_header_files = ['iphone/**/**/*.h', 'include/*.h']
 
   # Precisely include sources to avoid overlapping/duplicate matches
   s.source_files = [
-    'zbar/**/*.{h,c}',          # core C library
-    'include/*.h',              # zbar.h (private)
-    'iphone/include/*.h',       # private headers like config.h
-    'iphone/*.{h,m}',           # iOS Objective-C sources at root
-    'iphone/include/ATBarSDK/*.h' # public headers
+    "include/zbar.h",
+    "zbar/**/*.h",
+    "iphone/*.h",
+    "iphone/include/**/*.h",
+    "zbar/{config,decoder,error,image,img_scanner,refcnt,scanner,symbol}.c",
+    "zbar/decoder/{codabar,code39,code93,code128,databar,ean,i25,qr_finder}.c",
+    "zbar/qrcode/*.c",
+    "iphone/*.m"
   ]
   # Private headers needed during build (eg, config.h)
   s.private_header_files = ['iphone/include/config.h']
