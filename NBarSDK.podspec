@@ -32,9 +32,7 @@ Pod::Spec.new do |s|
   # Mark internal headers as private to avoid polluting other pods' header maps
   s.private_header_files = [
     "zbar/**/*.h",
-    "iphone/ZBarCVImage.h",
-    "iphone/debug.h",
-    "iphone/include/config.h"
+    "iphone/ZBarCVImage.h"
   ]
   
   # Bundle SDK resources (HTML and images)
