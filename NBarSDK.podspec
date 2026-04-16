@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'NBarSDK'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'NBarSDK'
 
   s.description      = 'NBarSDK is a barcode scanning SDK for iOS applications.'
@@ -56,7 +56,7 @@ Pod::Spec.new do |s|
     # Disable header maps so quoted includes resolve relative to this pod first
     'USE_HEADERMAP' => 'NO',
     # Ensure zbar.h and config.h are discoverable
-    'HEADER_SEARCH_PATHS' => '$(inherited) $(PODS_TARGET_SRCROOT)/iphone/include $(PODS_TARGET_SRCROOT)/include $(PODS_TARGET_SRCROOT)/zbar',
-    'USER_HEADER_SEARCH_PATHS' => '$(inherited) $(PODS_TARGET_SRCROOT)/iphone/include $(PODS_TARGET_SRCROOT)/include $(PODS_TARGET_SRCROOT)/zbar'
+    'HEADER_SEARCH_PATHS' => '$(PODS_TARGET_SRCROOT)/iphone/include $(PODS_TARGET_SRCROOT)/include $(PODS_TARGET_SRCROOT)/zbar $(inherited)',
+    'USER_HEADER_SEARCH_PATHS' => '$(PODS_TARGET_SRCROOT)/iphone/include $(PODS_TARGET_SRCROOT)/include $(PODS_TARGET_SRCROOT)/zbar $(inherited)'
   }
 end
