@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/kartel/NBarSDK.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'kartel' => 'neilliga@gmail.com' }
-  s.source           = { :git => 'https://github.com/kartel/NBarSDK.git', :tag => '1.0.0'}
+  s.source           = { :git => 'https://github.com/kartel/NBarSDK.git', :tag => '1.0.1'}
 
   s.ios.deployment_target = '13.0'
 
